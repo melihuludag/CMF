@@ -89,10 +89,10 @@ class Contracts():
         self.contract_list = []
         i = 4
         while ws.cell(row=i, column=1).value != None:
-            self.new_conract = contract(ws.cell(row=i, column=3).value, ws.cell(row=i, column=4).value,
-                                        ws.cell(row=i, column=6).value, ws.cell(row=i, column=12).value,
-                                        ws.cell(row=i, column=13).value, ws.cell(row=i, column=26).value,
-                                        ws.cell(row=i, column=27).value, ws.cell(row=i, column=28).value)
+            self.new_conract = contract(ws.cell(row=i, column="index of parameter").value, ws.cell(row=i, column="index of parameter").value,
+                                        ws.cell(row=i, column="index of parameter").value, ws.cell(row=i, column="index of parameter").value,
+                                        ws.cell(row=i, column="index of parameter").value, ws.cell(row=i, column="index of parameter").value,
+                                        ws.cell(row=i, column="index of parameter").value, ws.cell(row=i, column="index of parameter").value)
             # in this point you might have to arrange column index according to your excel sheet constuction
             self.contract_list.append(self.new_conract)
             i += 1
